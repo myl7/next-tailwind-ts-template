@@ -2,6 +2,24 @@
   "name": "next-tailwind-ts-template",
   "version": "0.1.0",
   "private": true,
+  "description": "Modern Next.js + TailwindCSS + Typescript template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myl7/next-tailwind-ts-template.git"
+  },
+  "keywords": [
+    "next",
+    "tailwindcss",
+    "typescript",
+    "pnpm",
+    "template"
+  ],
+  "author": "myl7 <myl@myl.moe> (https://myl.moe)",
+  "license": "Apache-2.0 OR MIT",
+  "bugs": {
+    "url": "https://github.com/myl7/next-tailwind-ts-template/issues"
+  },
+  "homepage": "https://github.com/myl7/next-tailwind-ts-template#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
