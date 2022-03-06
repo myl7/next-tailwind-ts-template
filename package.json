@@ -24,7 +24,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write '{pages,utils,components,styles}/**/*.{js,jsx,ts,tsx,json,md,yml,yaml,css,scss}'",
+    "format:check": "prettier --check '{pages,utils,components,styles}/**/*.{js,jsx,ts,tsx,json,md,yml,yaml,css,scss}'"
   },
   "dependencies": {
     "next": "12.1.0",
@@ -36,6 +38,8 @@
     "@types/react": "17.0.39",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.5.1",
     "typescript": "4.6.2"
   }
 }
