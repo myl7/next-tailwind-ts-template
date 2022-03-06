@@ -1,20 +1,39 @@
+/**
+ * Copyright (c) myl7 2022
+ * SPDX-License-Identifier: Apache-2.0 OR MIT
+ */
+
+/* TailwindCSS */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* Regular font: Roboto */
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+  font-family: Roboto, Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei',
+    'WenQuanYi Micro Hei', sans-serif;
 }
 
+/* Monospace font: DM Mono */
+code {
+  font-family: DM Mono, monospace;
+}
+
+/* Remove hyperlink default styles */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+/* Disable italic for Chinese fonts */
+@font-face {
+  font-family: Han;
+  font-style: italic;
+  src: local('PingFang SC'), local('Hiragino Sans GB'), local('Heiti SC'), local('Microsoft YaHei'),
+    local('WenQuanYi Micro Hei');
+}
+
+/* Handle absolute header when jumping via anchor */
+html {
+  scroll-padding-top: calc(64px + 1em);
 }
